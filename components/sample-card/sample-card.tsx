@@ -3,13 +3,11 @@ import './sample-card.css'
 
 interface ISampleCardProps {
     img: string;
-    height: number;
-    width: number;
     title: string;
     subtitle: string;
 }
 
-function SampleCard({ img, height, width, title, subtitle }: ISampleCardProps) {
+function SampleCard({ img, title, subtitle }: ISampleCardProps) {
     return (
         <div className="sample_card">
             <div className="sample_card_img">
