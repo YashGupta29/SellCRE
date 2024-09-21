@@ -1,0 +1,137 @@
+.hero {
+    height: fit-content;
+    padding-top: 60px;
+}   
+
+.hero_container::before {
+    position: absolute;
+    content: '';
+    width: 100vw;
+    height: 100%;
+    clip-path: polygon(0% 86%, 100.1% 13.8%, 100% 100%, 0% 100%);
+    background-color: #F9F9FF;
+    z-index: -1;
+}
+
+.hero_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px 18px;
+    position: relative;
+    gap: 50px;
+}
+
+.hero_text {
+    text-align: center;
+}
+
+.hero_title {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 44px;
+}
+
+.hero_title .bold {
+    font-weight: 700;
+}
+
+.hero_subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 20px;
+}
+
+.hero_cta_wrapper {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.hero_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7261FF;
+    padding: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}   
+
+.hero_btn_text {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.hero_btn_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_demo_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.hero_demo_play_cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hero_demo_text {
+    color: #2F2F2F;
+}
+
+.hero_image {
+    position: relative;
+    width: 100vw;
+    max-width: 528px;
+    height: auto;
+    aspect-ratio: 5/4;
+}
+
+@media screen and (min-width: 768px) {
+    .hero_container {
+        flex-direction: row;
+        padding: 24px 30px;
+    }
+
+    .hero_text {
+        text-align: left;
+    }
+
+    .hero_subtitle {
+        padding: 20px 0;
+    }
+
+    .hero_cta_wrapper {
+        padding: 0;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .hero_btn {
+        width: fit-content;
+        padding: 12px 16px;
+    }
+
+    .hero_btn_text {
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 500;
+        margin-right: 8px;
+    }
+}

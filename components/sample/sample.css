@@ -1,0 +1,42 @@
+.sample {
+    padding: 30px 10px;
+    background-image: url('/sample-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sample_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    background: #FFF;
+    border-radius: 10px;
+}
+
+.sample_title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+}
+
+.sample_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .sample {
+        padding: 30px;
+    }
+
+    .sample_list {
+        gap: 40px;
+    }
+}
